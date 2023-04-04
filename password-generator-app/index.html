@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+  <div class="title">
+    Password Generator
+  </div>
+  
+  <div class="pass-div">
+    <div class="random-password" id="random-pass" >
+      P4$5W0rD!
+    </div>
+    <div class="copy-password" id="copy">
+      <img src="assets/images/icon-copy.svg" alt="">
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="length-div">
+      <p class="length">
+        Character Length
+      </p>
+      <p class="result" id="result" placeholder="0">
+        10
+      </p>
+    </div>
+
+    <div class="slidercontainer" >
+      <input type="range" id="input" class="slider" min="0" value="" max="20" name="value">
+    </div>
+
+
+    <div class="includes">
+      <div class="checkbox">
+        <input class="check" type="checkbox" id="upper" name="uppercase" >
+        <label for="uppercase">  Include Uppercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input class="check" type="checkbox" id="low" name="low" >
+        <label for="low">   Include Lowercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input class="check" type="checkbox" id="num" name="num" >
+        <label for="num">   Include Numbers</label>
+      </div>
+      <div class="checkbox">
+        <input class="check" type="checkbox" id="symbol" name="symbol" >
+        <label for="symbol">    Include Symbols</label>
+      </div>
+    </div>
+
+    <div class="strength">
+      <p>
+        Strength
+      </p>
+
+      <div class="strength-two">
+        <p class="medium" id="medium">
+          MEDIUM
+        </p>
+       <div class="divs">
+          <div class="check one" id="one"> 
+
+          </div>
+          <div class="check two" id="two">
+
+          </div>
+          <div class="check three" id="three">
+
+          </div>
+          <div class="check four" id="four">
+
+          </div>
+       </div>
+      </div>
+    </div>
+  
+    <div class="generator">
+        <button type="button" id="button">
+          GENERATE
+          <!-- <img src="assets/images/icon-arrow-right.svg" alt=""> -->
+        <svg  class="svg" width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>    
+      </button>
+    </div>
+  
+</div>
+
+</body>
+<script src="password.js"></script>
+</html>
